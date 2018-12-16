@@ -22,6 +22,10 @@ p {
     line-height: 1.5;
 }
 
+.carousel-item.active {
+	display: block
+}
+
 header {
     position: relative;
     width: 100%;
@@ -1079,4 +1083,8 @@ video.fillWidth {
 .newsletter_submit_btn:hover
 {
 	background: #FE7C7F;
+}
+
+.card-title {
+	color: #ff93d7;
 }
