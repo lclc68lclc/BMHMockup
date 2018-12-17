@@ -80,13 +80,14 @@
 
 		<div class="row">
   
-		  <div class="col-lg-3">
+		  <div class="col-lg-3" id="myLinkContainer">
   
 			<h2 class="my-4">CATEGORIES</h2>
 			<div class="list-group">
-			  <a href="#" class="list-group-item">STRAIGHT HAIR</a>
-			  <a href="#" class="list-group-item">BODY WAVE HAIR</a>
-			  <a href="#" class="list-group-item">CURLY HAIR</a>
+			  <a href="#" class="list-group-item" onclick="filterSelection('all')">ALL</a>
+			  <a href="#" class="list-group-item" onclick="filterSelection('straight')">STRAIGHT HAIR</a>
+			  <a href="#" class="list-group-item" onclick="filterSelection('bodywave')">BODY WAVE HAIR</a>
+			  <a href="#" class="list-group-item" onclick="filterSelection('curly')">CURLY HAIR</a>
 			</div>
   
 		  </div>
@@ -95,7 +96,7 @@
 		  <div class="col-lg-9">
 			<div class="row">
   
-			  <div class="col-lg-4 col-md-6 mb-4">
+			  <div class="col-lg-4 col-md-6 mb-4 filterDiv straight">
 				<div class="card h-100">
 				  <a href="#"><img class="card-img-top" src="images/straightbun.jpg" alt="" ></a>
 				  <div class="card-body">
@@ -111,7 +112,7 @@
 				</div>
 			  </div>
 			  
-			  <div class="col-lg-4 col-md-6 mb-4">
+			  <div class="col-lg-4 col-md-6 mb-4 filterDiv bodywave">
 				<div class="card h-100">
 				  <a href="#"><img class="card-img-top" src="images/hair/waterwavebun.jpg" alt=""></a>
 				  <div class="card-body">
@@ -127,7 +128,7 @@
 				</div>
 			  </div>
   
-			  <div class="col-lg-4 col-md-6 mb-4">
+			  <div class="col-lg-4 col-md-6 mb-4 filterDiv curly">
 				<div class="card h-100">
 				  <a href="#"><img class="card-img-top" src="images/hair/deepcurllybun.jpg" alt=""></a>
 				  <div class="card-body">
@@ -143,12 +144,12 @@
 				</div>
 			  </div>
   
-			  <div class="col-lg-4 col-md-6 mb-4">
+			  <div class="col-lg-4 col-md-6 mb-4 filterDiv bodywave">
 				<div class="card h-100">
 				  <a href="#"><img class="card-img-top" src="images/hair/loosedeepbun.jpg" alt=""></a>
 				  <div class="card-body">
 					<h4 class="card-title">
-					  <a href="#">Loose Deep Bun</a>
+					  <a href="#">Loose Deep Wave Bundle</a>
 					</h4>
 					<h5>$24.99</h5>
 					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -159,7 +160,7 @@
 				</div>
 			  </div>
   
-			  <div class="col-lg-4 col-md-6 mb-4">
+			  <div class="col-lg-4 col-md-6 mb-4 filterDiv bodywave">
 				<div class="card h-100">
 				  <a href="#"><img class="card-img-top" src="images/hair/bodywaveunicornbun.jpg" alt=""></a>
 				  <div class="card-body">
@@ -175,7 +176,7 @@
 				</div>
 			  </div>
   
-			  <div class="col-lg-4 col-md-6 mb-4">
+			  <div class="col-lg-4 col-md-6 mb-4 filterDiv curly">
 				<div class="card h-100">
 				  <a href="#"><img class="card-img-top" src="images/hair/tightcurlybun.jpg" alt=""></a>
 				  <div class="card-body">
@@ -261,7 +262,10 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	
+	<!-- Filter-->
+	<script src="js/filterselection.js"></script>
     
 </body>
 

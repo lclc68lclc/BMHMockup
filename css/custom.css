@@ -1085,6 +1085,16 @@ video.fillWidth {
 	background: #FE7C7F;
 }
 
-.card-title {
-	color: #ff93d7;
+.filterDiv{
+	float: left;
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+.list-group-item.active{
+	background: #ff93d7;
+	border-color: #ff93d7;
 }
