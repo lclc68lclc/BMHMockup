@@ -1,7 +1,8 @@
 $( document ).ready(function(){
     var userFeed = new Instafeed({
         get: 'user',
-        userId: '5490218641',
+        userId: '8797922497',
+        clientID: 'c8c56e4aa81c41cf815da141fc7ea9cd',
         limit: 6,
         resolution: 'standard_resolution',
         accessToken: '8797922497.1677ed0.49a1248f1fc746b2850be53a3bef0d9c',
