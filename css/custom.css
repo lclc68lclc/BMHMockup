@@ -116,8 +116,10 @@ header .header-content .header-content-inner p {
 
 .content-3 {
 	padding: 20px 0 40px;
-	text-align: center;
+	text-align: justify;
+
 }
+
 
 .promo,
 .promo h3,
@@ -1094,7 +1096,8 @@ video.fillWidth {
 	display: block;
 }
 
-.list-group-item.active{
+.phstyled{
 	background: #ff93d7;
 	border-color: #ff93d7;
+	color: #fff;
 }
