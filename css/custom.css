@@ -1101,3 +1101,68 @@ video.fillWidth {
 	border-color: #ff93d7;
 	color: #fff;
 }
+
+.faqphoto {
+	padding: 20px;
+	border-radius: 5px;
+
+}
+a:hover, a:focus{
+    outline: none;
+    text-decoration: none;
+}
+#accordion .panel{
+    box-shadow: none;
+    border: none;
+    margin-bottom: 6px;
+}
+#accordion .panel-heading{
+    background-color:#fff;
+    padding:0;
+}
+#accordion .panel-title a{
+    display: block;
+    color:#fff;
+    font-size: 15px;
+    padding:14px 28px;
+    font-weight: bold;
+    position: relative;
+    border:1px solid #d3d3d3;
+    border-bottom:0 none;
+    background:#ff93d7;
+    border-top-right-radius: 15px;
+}
+#accordion .panel-title a.collapsed{
+    border-top:0;
+    color:#333;
+    background:#fff;
+    border-radius:0 15px;
+    border-top:1px solid #d3d3d3;
+    border-bottom:1px solid #d3d3d3;
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color:#fff;
+    position: absolute;
+    top:10px;
+    right:12px;
+    font-size: 14px;
+    line-height: 24px;
+}
+#accordion .panel-title a.collapsed:before{
+    content: "\f067";
+    color:#333;
+}
+#accordion .panel-body{
+    color:#000;
+    font-size: 14px;
+    line-height: 20px;
+    background:#fff;
+    padding: 5px 27px 15px;
+    border:1px solid #d3d3d3;
+    border-top:0 none;
+    border-bottom-left-radius: 15px;
+}
