@@ -1191,14 +1191,6 @@ a:hover, a:focus{
 	  hsla(322, 100%, 79%, 0));
   }
 
-  .dots {
-	color: #ff93d7;
-	height: 8px;
-	border-width: 0 0 8px;
-	border-style: solid;
-	border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="#{$color}" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
-	 width: 216px;
-  }
   
   .vertical-lines {
 	height: 10px;
@@ -1211,6 +1203,7 @@ a:hover, a:focus{
 	  transparent 100%);
 	background-size: 3px 100%;
 	width: 60%;
+	border-top: 0;
   }
   
   .colour-block {
