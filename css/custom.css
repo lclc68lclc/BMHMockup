@@ -1122,14 +1122,14 @@ a:hover, a:focus{
 }
 #accordion .panel-title a{
     display: block;
-    color:#fff;
+    color:#ff93d7;
     font-size: 15px;
     padding:14px 28px;
     font-weight: bold;
     position: relative;
-    border:1px solid #d3d3d3;
+    border:1px solid #ff93d7;
     border-bottom:0 none;
-    background:#ff93d7;
+    background:#fff;
     border-top-right-radius: 15px;
 }
 #accordion .panel-title a.collapsed{
@@ -1137,8 +1137,8 @@ a:hover, a:focus{
     color:#333;
     background:#fff;
     border-radius:0 15px;
-    border-top:1px solid #d3d3d3;
-    border-bottom:1px solid #d3d3d3;
+    border-top:1px solid #ff93d7;
+    border-bottom:1px solid #ff93d7;
 }
 #accordion .panel-title a:before,
 #accordion .panel-title a.collapsed:before{
@@ -1162,7 +1162,66 @@ a:hover, a:focus{
     line-height: 20px;
     background:#fff;
     padding: 5px 27px 15px;
-    border:1px solid #d3d3d3;
+    border:1px solid #eda828;
     border-top:0 none;
     border-bottom-left-radius: 15px;
 }
+
+/* Shine */
+.shine {
+	height: 20px;
+	width: 60%;
+	background-image: radial-gradient(
+	  farthest-side at 50% -50%,
+	  hsla(322, 100%, 79%, 0.7),
+	  hsla(0, 0%, 0%, 0));
+	position: relative; 
+  }
+  
+  .shine::before {
+	height: 1px;
+	position: absolute;
+	top: -1px;
+	left: 0;
+	right: 0;
+	background-image: linear-gradient(
+	  90deg,
+	  hsla(322, 100%, 79%, 0),
+	  hsla(322, 100%, 79%, 0.75) 50%,
+	  hsla(322, 100%, 79%, 0));
+  }
+
+  .dots {
+	color: #ff93d7;
+	height: 8px;
+	border-width: 0 0 8px;
+	border-style: solid;
+	border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="#{$color}" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
+	 width: 216px;
+  }
+  
+  .vertical-lines {
+	height: 10px;
+	color: #ff93d7;
+	background-image: linear-gradient(
+	  90deg,
+	  currentColor,
+	  currentColor 33.33%,
+	  transparent 33.33%,
+	  transparent 100%);
+	background-size: 3px 100%;
+	width: 60%;
+  }
+  
+  .colour-block {
+	background:#ff93d7;
+	width:60%;
+	padding:7% 20% 10% 20%;
+	color:#fff;
+  }
+
+  .hero {
+	height: 50vh;
+	text-align: center;
+	color: #FFFFFF;
+	background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 100% no-repeat, url("../images/curly.jpeg") 0 0 / cover no-repeat;
