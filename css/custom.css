@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    color: #eda828;
+    color: #e23241;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -31,8 +31,8 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: #fff;
-    background-image: url('../images/headerimg.jpg');
+    color: #292f36;
+    background-image: url('../images/mp.png');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -99,10 +99,14 @@ header .header-content .header-content-inner p {
 }
 
 .intro {
-	color: #ff93d7;
+	color: #e23241;
     background-color: #fff;
     padding: 70px 0;
     text-align: justify;
+}
+
+.intro h2 {
+	font-size: 50px;
 }
 
 .content {
@@ -1122,12 +1126,12 @@ a:hover, a:focus{
 }
 #accordion .panel-title a{
     display: block;
-    color:#ff93d7;
+    color:#292f36;
     font-size: 15px;
     padding:14px 28px;
     font-weight: bold;
     position: relative;
-    border:1px solid #ff93d7;
+    border:0;
     border-bottom:0 none;
     background:#fff;
     border-top-right-radius: 15px;
@@ -1162,7 +1166,7 @@ a:hover, a:focus{
     line-height: 20px;
     background:#fff;
     padding: 5px 27px 15px;
-    border:1px solid #eda828;
+    border:0;
     border-top:0 none;
     border-bottom-left-radius: 15px;
 }
@@ -1173,7 +1177,7 @@ a:hover, a:focus{
 	width: 60%;
 	background-image: radial-gradient(
 	  farthest-side at 50% -50%,
-	  hsla(322, 100%, 79%, 0.7),
+	  hsla(357, 91%, 44%, 0.7),
 	  hsla(0, 0%, 0%, 0));
 	position: relative; 
   }
@@ -1194,7 +1198,7 @@ a:hover, a:focus{
   
   .vertical-lines {
 	height: 10px;
-	color: #ff93d7;
+	color: #e23241;
 	background-image: linear-gradient(
 	  90deg,
 	  currentColor,
@@ -1218,7 +1222,7 @@ a:hover, a:focus{
 	width: 100%;
 	text-align: center;
 	color: #FFFFFF;
-	background: linear-gradient(45deg, rgba(255,175,189,.7),rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(74, 75, 75, 0.7)) 0 0 / 100% no-repeat, url("../images/curly.jpeg") 0 0 / cover no-repeat;
+	background: linear-gradient(45deg, rgba(74,75,75,0.7),rgba(226,50,65,.7), rgba(41,47,54,.7)) 0 0 / 100% no-repeat, url("../images/curly.jpeg") 0 0 / cover no-repeat;
   }
 
   .hero h1 {
@@ -1310,4 +1314,28 @@ a:hover, a:focus{
 		.col-25 {
 		  margin-bottom: 20px;
 		}
+	  }
+
+	  .parallax { 
+		/* The image used */
+		background-image: url("../images/dark-gold.jpeg");	  
+		/* Set a specific height */
+		height: 500px; 	  
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: #FFFFFF;
+		opacity: .8;
+	  }
+
+	  .faqcard{
+		  border-top: 1px solid #ccc;
+		  border-bottom: 1px solid #ccc;
+		  border-radius: 5px;
+		  margin-bottom: 10px;
+	  }
+	  .faqcard h3{
+		  color: #e23241;
 	  }
